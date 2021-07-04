@@ -29,8 +29,8 @@ if (isset($_POST['update'])) {
     <body class="bg-danger">
     <div class="container-fluid" align='center'><br><br><br><br><br><br>
         <h1 style="font-family: 'Bebas Neue', cursive;color:white">Update Agenda </h1>
-        <div class="card align-middle w-25">
-            <form style="margin: 10px 20px;" method="POST">
+        <div class="card align-middle w-50">
+            <form style="margin: 10px 10px;" method="POST">
                 <input type="hidden" name="id" value = "<?= $ket[0]['id_reminder'] ?>">
                 <div class="mb-3">
                   <label class="form-label" style="float: left;">Tanggal : </label>
@@ -38,7 +38,7 @@ if (isset($_POST['update'])) {
                 </div>
                 <div class="mb-3">
                   <label class="form-label" style="float: left;">Agenda :</label>
-                  <textarea rows="3" cols="40" name="keterangan" wrap="hard">
+                  <textarea style="width:100%" name="keterangan" wrap="hard">
                     <?=$ket[0]['keterangan']?>
                   </textarea><br/>
                 </div>

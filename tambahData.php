@@ -25,17 +25,17 @@ if (isset($_POST['tambah'])) {
     <body class="bg-danger">
     <div class="container-fluid" align='center'><br><br><br><br><br><br>
         <h1 style="font-family: 'Bebas Neue', cursive;color:white">Tambah Agenda Baru </h1>
-        <div class="card align-middle w-25">
+        <div class="card align-middle w-50">
             <form style="margin: 10px 20px;" method="POST">
                 <div class="mb-3">
                   <label class="form-label" style="float: left;">Tanggal : </label>
-                  <input type="date" class="form-control" id="date" name="date" placeholder="Tanggal" min="<?=$tanggal; ?>">
+                  <input type="date" class="form-control" id="date" name="date" placeholder="Tanggal" min="<?=$tanggal;?>" required>
                 </div>
                 <div class="mb-3">
                   <label class="form-label" style="float: left;">Agenda :</label>
-                  <textarea rows="3" cols="40" name="keterangan" wrap="hard"></textarea><br/>
+                  <textarea style="width:100%"name="keterangan" wrap="hard" required></textarea><br/>
                 </div>
-                <a align="left" href="home.php"><button class = "btn btn-success">Kembali</button></a>
+                <button align="left" class = "btn btn-success"><a style="text-decoration:none;color:white;" href="./home.php">Kembali</a></button>
                 <button type="submit" class="btn btn-danger" name="tambah">Submit</button>
               </form>
         </div>

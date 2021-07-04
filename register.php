@@ -25,7 +25,7 @@
     <body class="bg-danger">
     <div class="container-fluid" align='center'><br><br><br><br><br><br>
         <h1 style="font-family: 'Bebas Neue', cursive;color:white"> REGISTER </h1>
-        <div class="card align-middle w-25">
+        <div class="card align-middle w-50">
             <form style="margin: 10px 20px;" method="POST">
                 <div class="mb-3">
                   <label class="form-label" style="float: left;">Username</label>

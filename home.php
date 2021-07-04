@@ -68,7 +68,7 @@ $comingsoon = agenda($query2);
         <h2 class="text-secondary">Today</h2>
         <h4 class="text-secondary"><?=$tanggal?></h4>
         <br>
-        <table class="table table-striped table-hover w-75">
+        <table class="table table-striped table-hover">
             <tbody>
             <?php 
                 foreach ($today as $data) : 
@@ -97,7 +97,7 @@ $comingsoon = agenda($query2);
         <br>
         <h2 class="text-secondary">Coming Soon</h2>
         <br><br>
-        <table class="table table-striped table-hover w-75">
+        <table class="table table-striped table-hover">
             <tbody>
         <?php foreach ($comingsoon as $data) :
             ?>
